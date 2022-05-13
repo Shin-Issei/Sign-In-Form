@@ -3,6 +3,7 @@
   --fontFace: Verdana, Geneva, Tahoma, sans-serif;
   --leftAlign: 5vw;
   --defaultFontSize: 18px;
+  --shadow:14px 14px 11px -11px rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -95,17 +96,47 @@ label {
   display: block;
 }
 
+label{
+  color: rgb(162, 162, 162);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: var(--fontFace);
+  margin-bottom: .5rem;
+  letter-spacing: .3rem;
+}
+
 input {
+  outline: none !important;
   margin-bottom: 1rem;
+  border-radius: 7px;
+  height: 1.3rem;
+}
+
+input::after{
+  content: "*Passwords don't match.";
+}
+
+input[type="password"]:focus{
+  -webkit-box-shadow: 5px 10px 8px 0px rgba(0,0,0,0.27); 
+box-shadow: 5px 10px 8px 0px rgba(0,0,0,0.27);
+}
+
+input:invalid{
+  border-color: red;
 }
 
 .rightBottom {
+  
+  flex-direction: column;
   padding-left: var(--leftAlign);
-  padding-top: var(--leftAlign);
-  padding-bottom: var(--leftAlign);
+  padding-top:2rem;
+  padding-bottom: 2rem;
+  margin-bottom: var(--leftAlign);
 }
 
 #createAccnt{
+  
+  
     background-color:rgb(121, 83, 34);
     color:rgb(252, 252, 252);
 
@@ -114,8 +145,11 @@ input {
     padding-top: 1em;
     padding-bottom: 1em;
 
+    margin-bottom: 2rem;
+
     font-family: var(--fontFace);
     font-weight: bold;
+    font-size: 16px;
 
     border-radius: 13px;
     box-shadow: 14px 14px 11px -11px rgba(0, 0, 0, 0.4);
