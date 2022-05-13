@@ -1,13 +1,13 @@
-:root{
-    --debugBorder: 1px red solid;
-    --fontFace: Verdana, Geneva, Tahoma, sans-serif;
-    --leftAlign: 5vw;
-    --defaultFontSize: 18px;
+:root {
+  --debugBorder: 1px red solid;
+  --fontFace: Verdana, Geneva, Tahoma, sans-serif;
+  --leftAlign: 5vw;
+  --defaultFontSize: 18px;
 }
 
-body{
-    display: flex;
-    margin: 0;
+body {
+  display: flex;
+  margin: 0;
 }
 
 /* p{
@@ -15,65 +15,78 @@ body{
     padding:0;
 } */
 
-.left-side{
-    background-image: url(/candleandbooks--cropped.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: var(--defaultFontSize);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 30vw;
-    
+.left-side {
+  background-image: url(/candleandbooks.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-size: var(--defaultFontSize);
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  width: 32.1vw;
 }
 
-.credit-footer{
-    margin-top:auto;
-    font-size: calc(var(--defaultFontSize) - 6px);
+.credit-footer {
+  margin-top: auto;
+  font-size: calc(var(--defaultFontSize) - 6px);
 }
 
-.logo-card{
-    background-color: rgba(0,0,0, .4);
-    font-size: calc(var(--defaultFontSize) + 12px) ;
+.logo-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: calc(var(--defaultFontSize) + 12px);
 }
 
-.right-side > *{
-    border: var(--debugBorder)
-    /* This is for debug purposes only DELETE THIS */
+.right-side > * {
+  border: var(--debugBorder);
+  /* This is for debug purposes only DELETE THIS */
 }
 
-.right-side{
-    display: flex;
-    flex-direction: column;
-    font-family: var(--fontFace);
-    font-size: var(--defaultFontSize);
+.right-side {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fontFace);
+  font-size: var(--defaultFontSize);
 }
 
-.rightTop{
-    height: 47vh;
-    padding-left: var(--leftAlign);
-    padding-right: 35vw;
+.rightTop {
+  height: 47vh;
+  padding-left: var(--leftAlign);
+  padding-right: 35vw;
 }
 
-.rightMid{
-    display: flex;
-    flex-direction: column;
-    padding-left: var(--leftAlign);
-    padding-top: 1.2rem;
-    padding-bottom: 1.7rem;
+#blurb {
+  font-weight: bold;
+  white-space: pre-line;
+  position: relative;
+  top: 9rem;
 }
 
-form{
-    display: flex;
-    gap: 8rem;
+.rightMid {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--leftAlign);
+  padding-top: 1.2rem;
+  padding-bottom: 1.7rem;
 }
 
-
-
-input ,label{
-    display: block;
+form {
+  display: flex;
+  gap: 8rem;
 }
 
-.rightBottom{
-    padding-left: var(--leftAlign);
+input,
+label {
+  display: block;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+.rightBottom {
+  padding-left: var(--leftAlign);
+  padding-top: var(--leftAlign);
+  padding-bottom: var(--leftAlign);
 }
