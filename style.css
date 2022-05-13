@@ -1,0 +1,79 @@
+:root{
+    --debugBorder: 1px red solid;
+    --fontFace: Verdana, Geneva, Tahoma, sans-serif;
+    --leftAlign: 5vw;
+    --defaultFontSize: 18px;
+}
+
+body{
+    display: flex;
+    margin: 0;
+}
+
+/* p{
+    margin:0;
+    padding:0;
+} */
+
+.left-side{
+    background-image: url(/candleandbooks--cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: var(--defaultFontSize);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    
+}
+
+.credit-footer{
+    margin-top:auto;
+    font-size: calc(var(--defaultFontSize) - 6px);
+}
+
+.logo-card{
+    background-color: rgba(0,0,0, .4);
+    font-size: calc(var(--defaultFontSize) + 12px) ;
+}
+
+.right-side > *{
+    border: var(--debugBorder)
+    /* This is for debug purposes only DELETE THIS */
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontFace);
+    font-size: var(--defaultFontSize);
+}
+
+.rightTop{
+    height: 47vh;
+    padding-left: var(--leftAlign);
+    padding-right: 35vw;
+}
+
+.rightMid{
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--leftAlign);
+    padding-top: 1.2rem;
+    padding-bottom: 1.7rem;
+}
+
+form{
+    display: flex;
+    gap: 8rem;
+}
+
+
+
+input ,label{
+    display: block;
+}
+
+.rightBottom{
+    padding-left: var(--leftAlign);
+}
