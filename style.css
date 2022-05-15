@@ -70,9 +70,8 @@ body {
 
 #blurb {
   font-weight: bold;
-  white-space: pre-line;
-  position: relative;
-  top: 9rem;
+  line-height: 1.3em;
+  padding-top: 5rem;
 }
 
 .rightMid {
@@ -114,9 +113,6 @@ input {
   height: 1.3rem;
 }
 
-input::after {
-  content: "*Passwords don't match.";
-}
 
 input[type="password"]:focus,
 input:focus {
@@ -124,9 +120,7 @@ input:focus {
   box-shadow: 9px 9px 16px -9px #000000;
 }
 
-input:invalid {
-  border-color: red;
-}
+
 
 .rightBottom {
   flex-direction: column;
