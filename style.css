@@ -106,7 +106,9 @@ label{
 }
 
 input {
-  outline: none !important;
+  border-style: solid;
+  border-color: rgb(208, 208, 208);
+  outline: none;
   margin-bottom: 1rem;
   border-radius: 7px;
   height: 1.3rem;
@@ -116,9 +118,9 @@ input::after{
   content: "*Passwords don't match.";
 }
 
-input[type="password"]:focus{
-  -webkit-box-shadow: 5px 10px 8px 0px rgba(0,0,0,0.27); 
-box-shadow: 5px 10px 8px 0px rgba(0,0,0,0.27);
+input[type="password"]:focus , input:focus{
+  -webkit-box-shadow: 9px 9px 16px -9px #000000; 
+  box-shadow: 9px 9px 16px -9px #000000;
 }
 
 input:invalid{
@@ -153,4 +155,10 @@ input:invalid{
 
     border-radius: 13px;
     box-shadow: 14px 14px 11px -11px rgba(0, 0, 0, 0.4);
+}
+
+p > a{
+  color:rgb(121, 83, 34);
+  text-decoration: none;
+  
 }

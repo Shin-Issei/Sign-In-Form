@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Now!</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
   </head>
   <body>
     <div class="left-side">
@@ -42,7 +43,8 @@
             <label for="">EMAIL</label>
             <input type="email" name="" id="" />
             <label for="">PASSWORD</label>
-            <input type="password" name="" id="" title="* Passwords Do Not Match"  required/>
+            <input type="password" name="" id="pswrd1"  required/>
+            <span id="message"></span>
           </div>
           <div class="form-right">
             <label for="">LAST NAME</label>
@@ -50,14 +52,14 @@
             <label for="">PHONE NUMBER</label>
             <input type="" />
             <label for="">CONFIRM PASSWORD</label>
-            <input type="password" name="" id="" required/>
+            <input type="password" name="" id="pswrd2" required/>
           </div>
         </form>
       </div>
       <div class="rightBottom">
         <button id="createAccnt">Create Account</button>
 
-        <p>Already have an account? <a href="#">Log In Here</a></p>
+        <p>Already have an account? <a href="#">Log In Here.</a></p>
       </div>
     </div>
   </body>
